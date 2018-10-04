@@ -1,0 +1,39 @@
+{
+	"website": {
+		"header": {
+			"title": "saluto",
+			"color": "red"
+		},
+		"sockets": [
+			{
+				"name": "temperature",
+				"active": true
+			},
+			{
+				"name": "humidity",
+				"active": false
+			},
+			{
+				"name": "pressure",
+				"active": true
+			}
+		],
+		"products": [
+			{
+				"name": "guitare",
+				"price": 30,
+				"stock": 20
+			},
+			{
+				"name": "piano",
+				"price": 2000,
+				"stock": 10
+			},
+			{
+				"name": "flamenco",
+				"price": 25,
+				"stock": 18
+			}
+		]
+	}
+}
