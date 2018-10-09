@@ -10,7 +10,11 @@ Check out [Snips](https://snips.ai/) for more info.
 
 # Prerequisites
 
-The API is to be run on a Raspberry Pi 3 equipped with a [Sense Hat](https://www.kubii.fr/cartes-extension-cameras-raspberry-pi/1081-raspberry-pi-sense-hat-kubii-640522710799.html)
+The API is to be run on a Raspberry Pi 3 equipped with a [Sense Hat](https://www.kubii.fr/cartes-extension-cameras-raspberry-pi/1081-raspberry-pi-sense-hat-kubii-640522710799.html).
+
+You need to have a Snips account and an assistant with the Snips app linked to fully use the features.
+
+Additionally, the frontRasp will let you have a sweeter view of what is happening under the hood.
 
 # Getting Started
 
