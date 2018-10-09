@@ -8,17 +8,18 @@ const cors = require('cors');
 
 const IMU = new imu.IMU();
 
+// Enabling cors
 app.use(cors());
 
 app.use(express.static('public'));
 
+// Serving data.json on client landpage
 app.get('/', function (req, res) {
-	console.log('received connection');
 	var content = fs.readFileSync('./data.json');
 	res.send(content);
 })
 
-
+// Start fetching data when a socket connection opens, 1500ms delay between each fetch
 io.on('connect', function (socket) {
 	fetchData(socket);
 	setInterval(
@@ -29,7 +30,6 @@ io.on('connect', function (socket) {
 
 function fetchData(socket) {
 	IMU.getValue((err, data) => {
-	//	console.log(data);
 		socket.emit('fetchData', data);
 	})
 }

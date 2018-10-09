@@ -1,1 +1,1 @@
-{"website":{"header":{"title":"Welcome to MusicLand","color":"grey"},"sockets":[{"name":"temperature","active":false},{"name":"humidity","active":false},{"name":"pressure","active":false}],"products":[]}}
+{"website":{"header":{"title":"Welcome to this website","color":"grey"},"sockets":[{"name":"temperature","active":false},{"name":"humidity","active":false},{"name":"pressure","active":false}],"products":[]}}
