@@ -10,11 +10,14 @@ const IMU = new imu.IMU();
 
 app.use(cors());
 
+app.use(express.static('public'));
+
 app.get('/', function (req, res) {
 	console.log('received connection');
 	var content = fs.readFileSync('./data.json');
 	res.send(content);
 })
+
 
 io.on('connect', function (socket) {
 	fetchData(socket);
@@ -22,23 +25,13 @@ io.on('connect', function (socket) {
 		() => fetchData(socket),
 		1500
 	);
-/*	IMU.getValue((err, data) => {
-		if (err !== null) {
-			console.log('error');
-			return;
-		}
-		console.log(data);
-*/
-//io.emit('fetchData', {data: 'test'});
 })
 
 function fetchData(socket) {
-	console.log('in fetchdata');
 	IMU.getValue((err, data) => {
-		console.log(data);
+	//	console.log(data);
 		socket.emit('fetchData', data);
 	})
-	//setTimeout(fetchData, 2000);
 }
 
 Server.listen(3000, function () {
