@@ -16,14 +16,14 @@ The API is to be run on a Raspberry Pi 3 equipped with a [Sense Hat](https://www
 
 Connect to the Raspberry using ssh and clone the repository.
 
-`git clone git@github.com:Zaimwa9/apiRasp.git
-cd path/to/your/folder`
+`git clone git@github.com:Zaimwa9/apiRasp.git`
+`cd path/to/your/folder`
 
 Select the port you wish to expose (don't forget to modify frontRasp accordingly):
 
-`Server.listen(3000, function () {
+```Server.listen(3000, function () {
 	console.log('Up and running');
-})`
+})```
 
 Run the app:
 ### Node
