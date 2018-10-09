@@ -24,7 +24,8 @@ Select the port you wish to expose (don't forget to modify frontRasp accordingly
 ```javascript
 Server.listen(3000, function () {
 	console.log('Up and running');
-})```
+})
+```
 
 Run the app:
 ### Node
