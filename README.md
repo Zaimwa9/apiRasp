@@ -21,7 +21,8 @@ Connect to the Raspberry using ssh and clone the repository.
 
 Select the port you wish to expose (don't forget to modify frontRasp accordingly):
 
-```Server.listen(3000, function () {
+```javascript
+Server.listen(3000, function () {
 	console.log('Up and running');
 })```
 
