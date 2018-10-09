@@ -23,7 +23,7 @@ Connect to the Raspberry using ssh and clone the repository.
 `git clone git@github.com:Zaimwa9/apiRasp.git`
 `cd path/to/your/folder`
 
-Select the port you wish to expose (don't forget to modify frontRasp accordingly):
+Select the port you wish to expose, by default 3000 (don't forget to modify frontRasp accordingly):
 
 ```javascript
 Server.listen(3000, function () {
